@@ -1,0 +1,23 @@
+# /**:
+#   ros__parameters:
+#     dispersion_max_range: 4.0             # max range to detect robots
+#     dispersion_min_range: 0.15            # min detectable range of other robots
+#     dispersion_front_attraction: 1.0      # Higher values -> prioritize avoiding robots infront
+#     dispersion_threshold: 1               # Avoid even if 1 robot detected
+#     dispersion_linear_if_alone: 0.3
+#     dispersion_angular_if_alone: 0.0
+#     max_translational_velocity: 0.2
+#     max_rotational_velocity: 1.57
+
+
+
+/**:
+  ros__parameters:
+    dispersion_max_range: 0.6
+    dispersion_min_range: 0.5
+    dispersion_front_attraction: 0.0
+    dispersion_threshold: 1
+    dispersion_linear_if_alone: 0.3
+    dispersion_angular_if_alone: 0.0
+    max_translational_velocity: 0.3
+    max_rotational_velocity: 20.0

@@ -1,0 +1,7 @@
+# Request - Goal to execute
+float32 target_x
+float32 target_y
+---
+# Response - Acknowledgment
+bool accepted
+string message

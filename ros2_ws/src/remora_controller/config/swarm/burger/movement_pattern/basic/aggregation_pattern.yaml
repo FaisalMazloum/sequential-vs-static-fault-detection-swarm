@@ -1,0 +1,55 @@
+# /**:
+#   ros__parameters:
+#     aggregation_max_range: 10.0                       # max range to detect robots. Any robots withing range will enable JOIN_GROUP --> Compute Twist() towards CoM of all detected Robots
+#     aggregation_min_range: 3.5                        # min range to detect robots (important to prevent robots to continuously push towards each other)
+#     aggregation_group_distance: 4.0                   # Distance to be considered part of group to enable STAY_IN_GROUP
+#     aggregation_front_attraction: 0.5                 # [0,1] ; prioritize side or front robots
+#     aggregation_time_scale: 30.0                      # 2^(no. of robots in group) * timescale = additional cycles to stay in group. Large groups --> stay longer. Longer groups = more stable groups. Paired with base time.
+#     aggregation_base_stay_time: -1.0                  # Minimum duration (in cycles) a robot stays in STAY_IN_GROUP. If publishing to "range_data" at 5Hz, then 30*(1/5)=6s It is paired with timescale.
+#     aggregation_object_reduction: 'MEAN'
+#     aggregation_group_reference_selection: 'MEAN'     # [MEAN, NEAREST, FARTHEST] move towards or away from {group_reference}
+#     aggregation_object_threshold: 0.2                 # MAX margin of error (in m) between consecutive rays to be considered part of same robot. If  |ray_previous - threshold| < |ray| < |ray_previous + threshold| --> TRUE == same robot scan 
+#     aggregation_object_min_width: 2                   # min no. of ray scans on an object to classify as a "robot" (e.g. low number of scans = sensor noise)
+#     aggregation_object_max_width: 8                   # max no. of ray scans on an object to classify as a "robot" (e.g. large number of scans = wall)
+#     aggregation_stay_in_growing_groups: true          # Enable LEAVE_GROUP until 0 robots are within RAB max range, even if new robots are detected, it will move away from new centroid calculation (if MEAN selected).
+#     max_translational_velocity: 0.2
+#     max_rotational_velocity: 1.047
+
+
+# =================================================
+# 181 SEEDS EXPERIMENT PARAMETERS USES
+# =================================================
+# /**:
+#   ros__parameters:
+#     aggregation_max_range: 10.0
+#     aggregation_min_range: 0.5
+#     aggregation_group_distance: 1.5
+#     aggregation_front_attraction: 0.25
+#     aggregation_time_scale: 0.5
+#     aggregation_base_stay_time: 30.0
+#     aggregation_object_reduction: 'MEAN'
+#     aggregation_group_reference_selection: 'MEAN'
+#     aggregation_object_threshold: 0.2
+#     aggregation_object_min_width: 2
+#     aggregation_object_max_width: 500
+#     aggregation_stay_in_growing_groups: true
+#     max_translational_velocity: 0.3
+#     max_rotational_velocity: 1.57
+
+
+/**:
+  ros__parameters:
+    aggregation_max_range: 5.0
+    aggregation_min_range: 0.5
+    aggregation_group_distance: 1.5
+    aggregation_front_attraction: 0.0
+    aggregation_time_scale: 0.0
+    aggregation_base_stay_time: 100.0   # Publishing range_data msg at 5Hz, so 100cycles*(1/5Hz) = 20s minimum stay duration.
+    aggregation_object_reduction: 'MEAN'
+    aggregation_group_reference_selection: 'MEAN'
+    aggregation_object_threshold: 0.23  # Computed according to remora radius (0.225m) AND max range of 10m. THRESHOLD = sqrt( (0.225)^2 + (10 + 0.225)^2 ) = 0.227m .
+    aggregation_object_min_width: 4     # At 10m, n(rays) = 4 >= min_wdth.
+    aggregation_object_max_width: 50    # At 1m, n(rays) = 45 <= max_width.
+    aggregation_stay_in_growing_groups: true
+    max_translational_velocity: 0.3
+    max_rotational_velocity: 20.0

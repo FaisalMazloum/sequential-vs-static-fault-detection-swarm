@@ -1,0 +1,34 @@
+# /**:
+#   ros__parameters:
+#     hardware_protection_layer_max_range: 2.0            # distance to activate protection
+#     hardware_protection_layer_min_range: 1.0            # distance where potential field is strongest. Activates emergency rules
+#     hardware_protection_layer_front_attraction: 0.001     # higher values prioritize moving away from front robots
+#     hardware_protection_layer_threshold: 2              # min no. of ray scans to classify as a robot
+#     max_translational_velocity: 0.3
+#     max_rotational_velocity: 1.57
+
+
+
+# =================================================
+# 181 SEEDS EXPERIMENT PARAMETERS USES
+# =================================================
+# /**:
+#   ros__parameters:
+#     hardware_protection_layer_max_range: 1.0            # distance to activate protection
+#     hardware_protection_layer_min_range: 0.1            # distance where potential field is strongest. Activates emergency rules
+#     hardware_protection_layer_front_attraction: 0.00001     # higher values prioritize moving forward
+#     hardware_protection_layer_threshold: 2              # min no. of ray scans to classify as a robot
+#     max_translational_velocity: 0.1
+#     max_rotational_velocity: 20.0
+
+
+
+
+/**:
+  ros__parameters:
+    hardware_protection_layer_max_range: 1.0            # distance to activate protection
+    hardware_protection_layer_min_range: 0.1            # distance where potential field is strongest. Activates emergency rules
+    hardware_protection_layer_front_attraction: 0.0     # higher values prioritize moving forward
+    hardware_protection_layer_threshold: 4              # min no. of ray scans to classify as a robot
+    max_translational_velocity: 0.1
+    max_rotational_velocity: 30.0

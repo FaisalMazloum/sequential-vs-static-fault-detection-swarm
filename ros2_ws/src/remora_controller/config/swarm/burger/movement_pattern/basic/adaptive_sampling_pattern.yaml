@@ -1,0 +1,34 @@
+/**:
+  ros__parameters:
+    adaptive_sampling_timer_period: 0.1
+    new_zone_walk_duration: 0.0
+    adaptive_sampling_angular_min: 20.0
+    adaptive_sampling_angular_max: 20.0
+    adaptive_sampling_rot_interval_min: 1.0
+    adaptive_sampling_rot_interval_max: 3.0
+    adaptive_sampling_lin_interval_min: 3.0
+    adaptive_sampling_lin_interval_max: 8.0
+    adaptive_sampling_survey_speed_min: 0.24
+    adaptive_sampling_survey_speed_max: 0.30
+    adaptive_sampling_investigation_speed_min: 0.17
+    adaptive_sampling_investigation_speed_max: 0.23
+    adaptive_sampling_high_res_speed_min: 0.10
+    adaptive_sampling_high_res_speed_max: 0.16
+
+
+# /**:
+#   ros__parameters:
+#     adaptive_sampling_timer_period: 0.1
+#     new_zone_walk_duration: 0.0
+#     adaptive_sampling_angular_min: 20.0
+#     adaptive_sampling_angular_max: 20.0
+#     adaptive_sampling_rot_interval_min: 3.0
+#     adaptive_sampling_rot_interval_max: 3.0
+#     adaptive_sampling_lin_interval_min: 4.0
+#     adaptive_sampling_lin_interval_max: 4.0
+#     adaptive_sampling_survey_speed_min: 0.30
+#     adaptive_sampling_survey_speed_max: 0.30
+#     adaptive_sampling_investigation_speed_min: 0.20
+#     adaptive_sampling_investigation_speed_max: 0.20
+#     adaptive_sampling_high_res_speed_min: 0.10
+#     adaptive_sampling_high_res_speed_max: 0.10

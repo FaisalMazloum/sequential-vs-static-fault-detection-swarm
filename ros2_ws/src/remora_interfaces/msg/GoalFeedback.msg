@@ -1,0 +1,4 @@
+float32 current_x
+float32 current_y
+float32 distance_remaining
+float32 progress_percent
