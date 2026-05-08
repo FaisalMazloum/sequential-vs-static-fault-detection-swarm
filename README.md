@@ -20,10 +20,13 @@ https://github.com/user-attachments/assets/e65c580a-da22-44be-87c8-0bbafb7e7049
 ---
 
 ## Repository Structure
+
+```
 sequential-vs-static-fault-detection-swarm/
 ├── ros2_ws/        # ROS2 workspace including fault detection nodes (LSTM and GBDT)
 ├── unity_sim/      # Unity aquatic simulator for the REMORA USV swarm
 └── ROS2swarm/      # ROS2 swarm behaviour package
+```
 
 ---
 
