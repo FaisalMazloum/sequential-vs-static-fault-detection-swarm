@@ -1,5 +1,7 @@
 # Sequential vs Static Fault Detection for USV Swarms
 
+[![EU Funding](https://img.shields.io)](https://aigreenbots.eu)
+
 Implementation for the paper: **"Learning Faults in Time: Sequential Behavioural Modelling for Complex Fault Detection in Multi-Robot Systems"**
 
 > Faisal Firas Mazloum, David Portugal, Micael S. Couceiro  
